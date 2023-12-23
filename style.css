@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+body{
+   
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    
+}
+
+header{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.logo{
+    padding: 70px 70px 70px 0;
+}
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    background: url(src/images/bg-desktop.svg) no-repeat center center;
+    background-color: hsl(257, 40%, 49%);
+    background-position-x: 2%;
+    background-size:84%;
+    background-position-y: 90%;
+    height: 100%;
+    padding: 0 5%;
+}
+
+.hero{
+   display: flex; 
+   height: 80%;
+   
+}
+
+
+.container-left{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+.mock{
+    height: auto;
+    width: 900px;
+}
+
+.container-right{
+    margin: 50px 0 0 50px;
+    
+    
+}
+
+.container-right h2{
+    font-size: 52px;
+    color: white;
+}
+
+.container-right p{
+    
+    color: white;
+    font-weight: 300;
+    padding-top: 20px;
+    font-size: 23px;
+}
+
+.register{
+    margin-top: 30px;
+    border-radius: 30px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 12%;
+    
+}
+.fa-brands {
+    color: white;
+    border-radius: 50%;
+      border: 1px solid white; /* Cor da borda */
+      padding: 10px; /* Espaçamento interno para a borda */
+      display: inline-block;
+      height: 42px !important;
+      width: 42px !important;
+      text-align: center;
+      margin: 10px;
+      font-size: 20px;
+    
+    
+}
+.circle i{
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 375px){
+
+    .body-container{
+        max-width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        max-width: 375px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-right{
+        width: 100%;
+    }
+
+    .container-right h2{
+        font-size: 24px;
+
+    }
+
+    .mock{
+       width: 300px;
+    }
+}
+
+
+
