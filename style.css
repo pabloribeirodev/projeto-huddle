@@ -20,17 +20,17 @@ header{
 
 
 .logo{
-    padding: 70px 70px 70px 0;
+    height: 54px;
+    margin: 75px 0 90px 0;
 }
 
-.body-container{
+.body-container {
     display: flex;
     flex-direction: column;
     background: url(src/images/bg-desktop.svg) no-repeat center center;
     background-color: hsl(257, 40%, 49%);
-    background-position-x: 2%;
-    background-size:84%;
-    background-position-y: 90%;
+    background-position-x: -6%;
+    background-size: 85%;
     height: 100%;
     padding: 0 5%;
 }
@@ -82,7 +82,14 @@ header{
     font-size: 16px;
     font-weight: 600;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.2s;
 
+}
+
+.register:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
 }
 
 .footer{
@@ -102,8 +109,14 @@ header{
       text-align: center;
       margin: 10px;
       font-size: 20px;
-    
-    
+      cursor: pointer;
+      transition: 0.2s;
+
+}
+
+.fa-brands:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
 }
 .circle i{
     font-size: 20px;
@@ -114,31 +127,68 @@ header{
 @media (max-width: 375px){
 
     .body-container{
-        max-width: 375px;
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        padding: 0 10%;
+        background-position-y: 0;
+        background-size: 100%;
+        overflow: scroll;
+        
+        
+    }
+    .logo{
+        height: 33px;
+        margin: 44px 0 52px 0;
+        
     }
     .hero{
-        display: flex;
+        
         flex-direction: column;
-        max-width: 375px;
         align-items: center;
         justify-content: center;
     }
 
     .container-right{
-        width: 100%;
+       
+        text-align: center;
+        margin: 0;
     }
 
     .container-right h2{
-        font-size: 24px;
+        font-size: 21px;
 
     }
 
-    .mock{
-       width: 300px;
+    .container-right p {
+        color: white;
+        font-weight: 300;
+        padding-top: 20px;
+        font-size: 15px;
+        
+    }
+
+    .mock {
+        width: 293px;
+        margin-bottom: 60px;
+    }
+
+    .footer{
+        justify-content: center;
+        
+        
+        
+    }
+
+    .register{
+        height: 45px;
+        margin-bottom: 100px;
+    }
+
+    .fa-brands{
+        
+        height: 34px !important;
+        width: 34px !important;
+        font-size: 14px;
+        margin-bottom: 40px;
     }
 }
 
